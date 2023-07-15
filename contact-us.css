@@ -1,0 +1,26 @@
+header{
+    background-image: url(./images/contact-heading.jpg);
+    height: 30vh;
+}
+/*UBICACION*/
+#prueba a{
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+#prueba a::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    margin-top: 22px;
+    height: 2px;
+    width: 100%;
+    transition: all 350ms;
+    visibility: hidden;
+}
+
+#prueba a:hover::before{
+    margin-top: 40px;
+    visibility: visible;
+}
+

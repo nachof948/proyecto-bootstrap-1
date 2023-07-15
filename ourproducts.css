@@ -1,0 +1,94 @@
+header{
+    background-image: url(./images/products-heading.jpg);
+    height: 35vh;
+}
+header h2{
+    font-size: 1.5rem;
+}
+header p{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+/*PRODUCTOS*/
+#titulos-prod a{
+    font-size: 0.8rem;
+    transition: all 250ms;
+}
+#titulos-prod a:hover{
+    color: red !important;
+}
+#titulos-prod a:focus{
+    color: red !important;
+}
+#cards{
+    width: 13rem;
+    height: 22rem;
+    margin: 0 auto;
+}
+/*PANTALLA GRANDE*/
+@media screen and (min-width:992px){
+    #cards{
+    width: 16rem;
+    height: 20rem;
+    }
+    #titulos{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #subtitle{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}    
+@media screen and (min-width:1199px) {
+    #cards{
+        width: 22rem;
+        height: 20rem;
+        }
+}
+/*PANTALLA EXTRA-GRANDE*/
+@media screen and (min-width:1400px){
+    #cards{
+        width: 25rem;
+        height: 22rem;
+        }
+        #subtitle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }   
+/*END PRODUCTOS*/
+/*PAGINATION*/
+#pagination a{
+    transition: all 350ms;
+}
+#pagination a:hover{
+    color: white !important;
+    background-color: red;
+}
+/*END PAGINATION*/
+}
+#prueba a{
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+#prueba a::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    margin-top: 22px;
+    height: 2px;
+    width: 100%;
+    transition: all 350ms;
+    visibility: hidden;
+}
+
+#prueba a:hover::before{
+    margin-top: 50px;
+    visibility: visible;
+}
